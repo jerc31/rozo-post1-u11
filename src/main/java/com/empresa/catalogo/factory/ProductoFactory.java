@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ProductoFactory {
 
+    // Convierte un DTO de solicitud a una entidad Producto
     public Producto toEntity(ProductoRequestDTO dto) {
         Producto producto = new Producto();
         producto.setNombre(dto.getNombre());

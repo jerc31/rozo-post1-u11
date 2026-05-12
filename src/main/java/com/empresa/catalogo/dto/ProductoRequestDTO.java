@@ -6,11 +6,12 @@ import jakarta.validation.constraints.Positive;
 
 public class ProductoRequestDTO {
 
+
     @NotBlank(message = "El nombre es obligatorio")
     private String nombre;
 
     @NotNull(message = "El precio es obligatorio")
-    @Positive(message = "El precio debe ser mayor a cero")
+    @Positive(message = "El precio debe ser mayor a cero ")
     private Double precio;
 
     private String categoria;
